@@ -1,0 +1,17 @@
+[
+  {
+    "name": "invoice_number",
+    "description": "Invoice or bill number",
+    "data_type": "string"
+  },
+  {
+    "name": "due_date",
+    "description": "Payment due date",
+    "data_type": "date"
+  },
+  {
+    "name": "total_amount",
+    "description": "Total amount due",
+    "data_type": "number"
+  }
+]
