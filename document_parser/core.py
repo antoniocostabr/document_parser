@@ -136,7 +136,7 @@ INSTRUCTIONS:
 
             # Prepare the message content with images
             content = [{"type": "text", "text": text_prompt}]
-            
+
             # Add each image to the content
             for img_base64 in base64_images:
                 content.append({

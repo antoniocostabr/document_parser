@@ -77,7 +77,7 @@ class PDFProcessor:
         try:
             # Convert PDF to images (200 DPI for good quality)
             images = convert_from_bytes(pdf_content, dpi=200, fmt='PNG')
-            
+
             base64_images = []
             for image in images:
                 # Convert PIL Image to base64
@@ -85,7 +85,7 @@ class PDFProcessor:
                 image.save(buffer, format='PNG')
                 img_str = base64.b64encode(buffer.getvalue()).decode('utf-8')
                 base64_images.append(img_str)
-            
+
             return base64_images
         except Exception as e:
             raise Exception(f"Failed to convert PDF to images: {str(e)}")
